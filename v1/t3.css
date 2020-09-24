@@ -1,0 +1,290 @@
+/* * {
+  outline: 1px solid;
+ } */
+
+body {
+  background-image: url(./img/bg-body.jpg);
+}
+.container {
+  background-color: #326611;
+}
+.logo {
+  justify-content: center;
+  margin: 0;
+  background-color: #fff;
+  padding: 20px 0;
+}
+.navbar-nav {
+  width: 100%;
+}
+.navbar_wrap {
+  background-color: #4a4a4a;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #b5b5b6;
+}
+.nav-item {
+  flex: 1 0 auto;
+  padding: 20px;
+  color: #e6e7c2;
+}
+
+.navbar-nav a:hover {
+  color: #485e3b;
+  background-color: #dbebd0;
+  text-decoration: none;
+}
+.navbar-nav a {
+  text-align: center;
+}
+.first_btn {
+  background-color: #98b486;
+}
+
+.navbar {
+  flex-wrap: wrap;
+}
+
+h2 {
+  color: #e3e59a;
+}
+.shop_now_xs {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+}
+.shop_now_xs h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.shop_now_xs p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
+.shop_now_xs a {
+  color: #799194;
+}
+
+@media (min-width: 768px) {
+  .shop_now_xs {
+    display: none;
+  }
+}
+.shop h3 {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .shop h3 {
+    font-size: 30px;
+  }
+}
+.shop_now {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.shop_now a {
+  color: #799194;
+}
+.product {
+  padding: 20px 0;
+}
+
+.product_text {
+  margin-left: 10px;
+}
+.product_text h4 {
+  margin: 0;
+  color: #dde195;
+}
+.product_text > p {
+  margin: 0;
+  color: #e2e7e1;
+}
+
+.product_img {
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+}
+.product_item {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 320px) {
+  .product_wrap {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .product_wrap:not(:last-child) {
+    border-right: solid;
+    color: #3b7119;
+  }
+}
+@media (min-width: 992px) {
+  .product_item {
+    align-items: flex-start;
+  }
+}
+.shop {
+  padding: 20px 10px;
+  background-color: #fefefe;
+}
+
+.shop_info {
+  padding: 0;
+}
+
+.shop_info_item {
+  padding: 20px 10px;
+}
+.shop > h3 {
+  background-color: #dde9d6;
+  color: #8b6d4f;
+  border-bottom: solid;
+  border-color: #bbd1ac;
+  width: 100%;
+  border-width: 2px;
+  margin: 0 10px;
+  padding: 5px 20px;
+}
+
+.shop_info_img img {
+  width: 100%;
+  height: auto;
+}
+.shop_info_text h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #8b6d4f;
+}
+
+@media (min-width: 768px) {
+  .shop_info_text h4 {
+    font-size: 18px;
+  }
+}
+
+.shop_info_text p {
+  margin: 0;
+}
+hr {
+  margin: 0 10px;
+  color: #f1f1ef;
+  width: 100%;
+}
+.service {
+  margin: 20px 0;
+}
+
+.service > .service_img {
+  padding: 0 10px;
+}
+
+.service > .service_text {
+  counter-reset: article;
+  padding: 20px 10px;
+}
+.service_img img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .service > .service_text {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+  }
+}
+.service p {
+  display: flex;
+}
+.service_text > p::before {
+  content: counter(article) ".";
+  counter-increment: article;
+  font-weight: bold;
+}
+
+.service_text > h3 {
+  margin-bottom: 20px;
+  border-width: 2px;
+  border-bottom: solid;
+  border-color: #bbd1ac;
+  background-color: #dde9d6;
+  color: #8b6d4f;
+  padding: 5px 20px;
+}
+
+.contact_way {
+  margin: 0;
+  background-color: #dce9d6;
+}
+.contact_way_text {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-right: solid;
+  border-color: #cedfc5;
+}
+
+.contact_way_text p {
+  color: #a2a59f;
+  margin: 0;
+}
+.social_media {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.contact_way {
+  padding: 0 5px;
+}
+.contact_way_text h5 {
+  color: #8c8c8d;
+}
+.social_media h5 {
+  color: #8c8c8d;
+}
+
+.navbar-nav .nav-item {
+  flex: 1 0 0;
+}
+
+.icon_item a {
+  display: inline-block;
+  color: #a2a59f;
+}
+.icon_item a i {
+  color: #356614;
+  margin-right: 10px;
+}
+
+.footer_wrap {
+  text-align: center;
+  font-size: 0;
+}
+.footer_wrap p {
+  margin: 0;
+  font-size: 16px;
+  color: #d6ded2;
+}
+
+.footer_wrap span:nth-child(2) {
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .footer_wrap > p {
+    display: inline;
+  }
+}
+@media (min-width: 768px) {
+  .footer_wrap > span {
+    font-size: 16px;
+    color: #d6ded2;
+  }
+}
