@@ -223,9 +223,10 @@ hr {
   border-color: #f1f1ef;
 }
 .service {
-  margin-top: 20px;
+  margin: 20px 0 0;
 }
 .service_title_xs {
+  width: 100%;
   padding: 5px 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid #bbd1ac;
@@ -258,6 +259,13 @@ hr {
     display: flex;
   }
 }
+
+@media (min-width: 768px) {
+  .service_img_wrap_xs {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .service_text {
     padding-left: 20px;
@@ -269,28 +277,23 @@ hr {
   }
 }
 
-.service_text > .service_text_wrap {
-  counter-reset: article;
+.service_text ol {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
 }
-
-.service_text p {
+.service_text ol li {
+  line-height: 23px;
   display: flex;
 }
-.service_text p:nth-child(2) {
-  margin-top: 20px;
+.service_text ol > :not(:last-child) {
+  margin-bottom: 10px;
 }
 
-@media (min-width: 992px) {
-  .service_text p {
-    margin-bottom: 10px;
-    font-size: 15px;
-  }
+.service_text .service_text_wrap {
+  counter-reset: article;
 }
-
-.service_text_wrap :nth-last-child(1) {
-  margin-bottom: 0;
-}
-.service_text_wrap > p::before {
+.service_text_wrap ol li::before {
   content: counter(article) ".";
   counter-increment: article;
   padding-right: 10px;
@@ -305,6 +308,7 @@ hr {
   color: #8b6d4f;
   background-color: #dde9d6;
 }
+
 @media (min-width: 768px) {
   .service_title {
     display: block;
